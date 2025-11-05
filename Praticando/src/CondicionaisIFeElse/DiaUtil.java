@@ -3,7 +3,9 @@ package CondicionaisIFeElse;
 import java.util.Scanner;
 
 public class DiaUtil {
-    static void main() {
+    public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
         String dia;
 

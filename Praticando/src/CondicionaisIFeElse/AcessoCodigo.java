@@ -3,30 +3,31 @@ package CondicionaisIFeElse;
 import java.util.Scanner;
 
 public class AcessoCodigo {
-    static void main() {
-        Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
 
-        int codigo = 2023;
-        double nivel;
 
-        System.out.println("digite o codigo de acesso: ");
-        codigo = scanner.nextInt();
+            Scanner scanner = new Scanner(System.in);
 
-        System.out.println("digite o nivel de permissão: ");
-        nivel = scanner.nextInt();
+            int codigo = 2023;
+            double nivel;
 
-        if (codigo == 2023) {
+            System.out.println("digite o codigo de acesso: ");
+            codigo = scanner.nextInt();
+
+            System.out.println("digite o nivel de permissão: ");
+            nivel = scanner.nextInt();
+
+            if (codigo == 2023) {
+            }
+            if (nivel <= 3) {
+                System.out.println("Acesso permitido. Bem-vindo ao sistema!");
+            } else {
+                System.out.println("""
+                         acesso negado
+                        codigo ou nivel errados.
+                        """);
+            }
+
+
         }
-        if (nivel <= 3){
-            System.out.println("Acesso permitido. Bem-vindo ao sistema!");
-        }else {
-            System.out.println("""
-                     acesso negado
-                    codigo ou nivel errados.
-                    """);
-        }
-
-
-
     }
-}

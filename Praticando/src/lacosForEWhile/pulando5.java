@@ -1,6 +1,6 @@
 package lacosForEWhile;
 
-public class EncontrandoMaiorNumero {
+public class pulando5 {
     public static void main(String[] args) {
 
     }
