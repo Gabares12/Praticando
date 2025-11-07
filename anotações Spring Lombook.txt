@@ -1,0 +1,71 @@
+Anotações Spring Boot LOMBOOK -
+
+@Getter e @Setter
+
+são anotações que fornecem os métodos getters
+e setters para atributos privados
+============================================
+@ToString 
+ela gera um método toString
+============================================
+@EqualsAndHashCode
+fornece os métodos equals e hashCode
+obs: é possivel personalizar os atributos que serão 
+validados, 
+ex:import lombok.*;
+import java.util.Date;
+@ToString
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(exclude={"dataNascimento","idade"})
+public class Pessoa {
+
+    private String nome;
+    private String cpf;
+    private String apelido;
+    private Date dataNascimento;
+    private int idade;
+==========================================
+@Data
+essa anotação combina anotações como:
+@ToString,@EqualsAndHashCode,Também fornece a geração de construtores, 
+adicionando um construtor público que 
+leva qualquer campo @NonNull ou final como parâmetros.
+==========================================
+@NoArgsConstructor
+fornce a criaçãp de um construtor vazio
+ex:
+public Pessoa (){
+        
+    }
+==========================================
+@AllArgsConstructor
+fornce a criação de um construtor com todos 
+os atributos
+Ex:
+public Pessoa(String nome, String cpf, String apelido, Date dataNascimento, int idade, Endereco endereco) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.apelido = apelido;
+        this.dataNascimento = dataNascimento;
+        this.idade = idade;
+        this.endereco = endereco;
+    }
+
+==========================================
+@Cleanup
+chama os métodos close() sem problemas.
+==========================================
+@SneakThrows
+para lançar exceções onde antes não se era comum
+
+==================================================
+==================================================
+Anotações SpringBoot
+@Component não entendi
+@Bean não entendi 
+@autowired não entendi
+@RestController não entendi
+@Controller
