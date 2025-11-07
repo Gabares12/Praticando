@@ -66,6 +66,10 @@ para lançar exceções onde antes não se era comum
 Anotações SpringBoot
 @Component não entendi
 @Bean não entendi 
+==================================================
+OBS: baixar Lombok no intellijei
+
 @autowired não entendi
 @RestController não entendi
 @Controller
+
