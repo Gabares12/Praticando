@@ -1,7 +1,4 @@
 package ExemploPOO;
-
-import java.io.PrintStream;
-
 public class Funcionario {
 
     String nome;
