@@ -62,18 +62,28 @@ chama os métodos close() sem problemas.
 para lançar exceções onde antes não se era comum
 
 ==================================================
+@autowired
+faz o istanciamento de objetos mais simplificado 
+sem o " New = nome da classe()"
+
+ficar apenas NomeDaClasse nomedaclasse
+
 ==================================================
+@RestController
+é um conjuto do @Controller e o @ResponseBody
+
+==================================================
+@Controller
+basicamente ele diz para o SpringBoot que a classe 
+que ele for posto será um Controller
+==================================================
+
 Anotações SpringBoot
 @Component não entendi
 @Bean não entendi 
 ==================================================
-OBS: baixar Lombok no intellijei
-
-@autowired não entendi
-@RestController não entendi
-
 ...
-@Controller
+
 
 
 
